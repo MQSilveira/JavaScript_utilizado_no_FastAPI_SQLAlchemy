@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.:: USUARIOS ::.</title>
+</head>
+<body>
+
+    <div> <!-- DIV CONTENDO O INPUT DE PESQUISA (ID) -->
+        <input type="text" name="usuarios" id="objeto_busca"  placeholder="Informe o ID do Usuario">
+        <button onclick="pesquisa()">Pesquisar</button>
+    </div>
+
+
+    <table>
+        <thead>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>E-mail</th>
+        </thead>
+
+        <!-- TBODY ONDE IRÁ RETORNAR O RESULTADO DA PESQUISA
+            PÁGINA INICIAL IRÁ CONTER TODOS OS ALUNOS -->
+        <tbody id="usuarios"></tbody>
+    </table>
+
+
+    <!-- LINK PARA PÁGINA INICIAL CONTENDO TODOS OS ALUNOS -->
+    <a href="usuarios.html">Exibir todos os Usuários</a>
+    <a href="salvar/salvar-usuarios.html">Criar novo USUÁRIO</a>
+    <script src="../js/usuario.js"></script>
+</body>
+</html>

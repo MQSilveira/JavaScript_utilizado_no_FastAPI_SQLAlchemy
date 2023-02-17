@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.:: ALUNOS ::.</title>
+</head>
+
+<body>
+
+    <div> <!-- DIV CONTENDO O INPUT DE PESQUISA (ID) -->
+        <input type="text" name="alunos" id="objeto_busca" placeholder="Informe o ID do Aluno">
+        <button onclick="pesquisa()">Pesquisar</button>
+    </div>
+
+    <table>
+        <thead>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>E-mail</th>
+        </thead>
+
+        <!-- TBODY ONDE IRÁ RETORNAR O RESULTADO DA PESQUISA
+            PÁGINA INICIAL IRÁ CONTER TODOS OS ALUNOS -->
+        <tbody id="alunos"></tbody>
+    </table>
+    
+    <!-- LINK PARA PÁGINA INICIAL CONTENDO TODOS OS ALUNOS -->
+    <a href="alunos.html">Exibir todos os Alunos</a>
+    <a href="salvar/salvar-aluno.html">Criar novo ALUNO</a>
+
+    <script src="../js/aluno.js"></script>
+
+</body>
+
+</html>

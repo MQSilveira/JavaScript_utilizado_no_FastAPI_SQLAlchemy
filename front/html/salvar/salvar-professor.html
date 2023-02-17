@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> .:: NOVO ::. </title>
+</head>
+
+<body>
+    <form id="form-professor" name="form-professor" method="post" onsubmit="salvar()">
+
+        <input type="text" name="id" id="id" readonly placeholder="ID">
+        <input type="text" name="nome" id="nome" placeholder="NOME">
+        <input type="text" name="email" id="email" placeholder="EMAIL">
+        <input type="submit" value="salvar">
+
+    </form>
+
+    <h5 id="confirma"></h5>
+
+    <a href="../professores.html">Voltar</a>
+
+    <script src="../../js/professor.js"></script>
+
+    <script>
+        document.getElementById('form-professor').addEventListener(
+            'submit', e => {
+            e.preventDefault()
+        })
+        
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const id = urlParams.get('id');
+        if (id != null) {
+            carrega_objeto(id);
+        }
+    </script>
+
+</body>
+
+</html>
